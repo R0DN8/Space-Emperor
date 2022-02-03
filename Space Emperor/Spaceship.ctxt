@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Spaceship
+comment0.text=\r\n\ Spaceship\ ist\ eine\ \u00DCberklasse\ aller\ Raumschiffe.\r\n\ \r\n\ IN\ ENGLISH\ PLEASE\!\!\r\n\ \r\n\ @author\ (Luca,\ Jason)\ Tin\r\n\ @version\ 03.02.2022\r\n
+comment1.params=pos\ velocity
+comment1.target=Spaceship(Position,\ int)
+comment1.text=\r\n\ Raumschiff\ erscheint\ an\ der\ \u00DCbergebenen\ Position\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ tut,\ was\ auch\ immer\ Spaceship\ tun\ will.\ Diese\ Methode\ wird\ aufgerufen,\ \r\n\ sobald\ der\ 'Act'\ oder\ 'Run'\ Button\ in\ der\ Umgebung\ angeklickt\ werden.\ \r\n
+comment3.params=
+comment3.target=void\ onNextRound()
+comment4.params=endPosition
+comment4.target=int\ roundNeededForMove(Position)
+comment4.text=\r\n\ Raumschiff\ bewegt\ sich\ innerhalb\ der\ einer\ Anzahl\ von\ Runden\ zu\ der\ angegebenen\ Position\r\n\ \ \ \ \ ----------------------------------\r\n\ \ \ \ public\ void\ moveToPosition(Position\ endPosition){\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ roundForMoveNeeded\ \=\ roundNeededForMove(endPosition);\r\n\ \ \ \ \ \ \ \ currentMoveRound\ \=\ 0;\r\n\ \ \ \ \ \ \ \ moveStartPosition\ \=\ position;\r\n\ \ \ \ \ \ \ \ moveEndPosition\ \=\ endPosition;\r\n\ \ \ \ \ \ \ \ moveDeltaX\ \=\ (moveStartPosition.getX()\ -\ moveEndPosition.getX())\ /\ roundForMoveNeeded;\r\n\ \ \ \ \ \ \ \ moveDeltaY\ \=\ (moveStartPosition.getY()\ -\ moveEndPosition.getY())\ /\ roundForMoveNeeded;\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ protected\ void\ move(int\ round){\r\n\ \ \ \ \ \ \ \ if(currentMoveRound\ <\ roundForMoveNeeded)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ private\ Position\ moveStartPosition;\r\n\ \ \ \ private\ Position\ moveEndPosition;\r\n\ \ \ \ private\ int\ roundForMoveNeeded;\r\n\ \ \ \ private\ int\ currentMoveRound;\r\n\ \ \ \ private\ int\ moveDeltaX;\r\n\ \ \ \ private\ int\ moveDeltaY;\r\n\ \ \ \ \r\n\ \ \ \ /**\r\n\ Gibt\ Anzahl\ der\ Runden\ zur\u00FCck,\ die\ f\u00FCr\ eine\ Bewegung\ ben\u00F6tigt\ werden\r\n
+comment5.params=
+comment5.target=Position\ getPosition()
+comment6.params=pos
+comment6.target=void\ setPosition(Position)
+numComments=7
