@@ -18,17 +18,36 @@ public class Space extends World
      */
     public Space()
     {    
-        // Erstellt eine neue Welt mit 1280x720 Zellen und einer Zell-Größe von 1x1 Pixeln.
+        // Erstellt eine neue Welt mit 1090x875 Zellen und einer Zell-Größe von 1x1 Pixeln.
         super(1090, 875, 1); //Auflösung und Pixelgröße
         //private GifImage g = new GifImage("BackgroundSpace.gif");
         
         
         //folgende Objecte werden mit der Welt geladen:
         SideBarMenu sideBarMenu = new SideBarMenu();
-            addObject(new SideBarMenu(), 983, 400);
+            addObject(new SideBarMenu(), 983, 440);
         Skilltree skilltree = new Skilltree();
             addObject(new Skilltree(), 1000, 600);
+          
+            showMessage();
     }
+    
+     public void showMessage()
+    {
+        /*
+         * GreenfootImage /NAME/ = new GreenfootImage(/TEXT OR VARIABLE/, /FONT-SIZE/, Color.WHITE, null);
+         * getBackground().drawImage(/NAME/, /X-COORDINATE/, /Y-COORDINATE/);
+         * 
+         * !To insert new Text: Copy above two lines; change the parameters in //
+         */
+        
+        
+    }
+    
+    
+    
+    
+    
     /* Diese Methode verhindert, dass Objekte angezeigt werden.
      * Was genau sie anstellt, keine Ahnung. Vielleicht zeigt sie die Objekte hinter dem 
      * Hintergrund an, vielleicht werden sie gar nicht gerendert..
