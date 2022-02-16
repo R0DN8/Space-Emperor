@@ -14,17 +14,40 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class Skilltree extends Actor
 {
+    int strength;//Raumschiffstärke -> mehr Schaden
+    int defense;//Verteidigung des eigenen Planeten (evtl. Haltbarkeit der Schiffe/später Schild)
+    int productionSpeed;//erhöht Produktion auf eigenem Planeten pro Runde
+    int collectionSpeed;//erhöht Materialaufnahme der Schiffe pro "fahrt"
+    int shipSpeed;//Geschwindigkeit der Schiffe
+
     /**
      * Act - tut, was auch immer Skilltree tun will. Diese Methode wird aufgerufen, 
      * sobald der 'Act' oder 'Run' Button in der Umgebung angeklickt werden. 
      */
-    public void act()
-    {
-        int strength;//Raumschiffstärke -> mehr Schaden
-        int defense;//Verteidigung des eigenen Planeten (evtl. Haltbarkeit der Schiffe/später Schild)
-        int productionSpeed;//erhöht Produktion auf eigenem Planeten pro Runde
-        int collectionSpeed;//erhöht Materialaufnahme der Schiffe pro "fahrt"
-        int shipSpeed;//Geschwindigkeit der Schiffe
+
+    public Skilltree(){
+        //Stats in "%" wird später in ihre true value geändert
+        strength = 100; //true value:
+        defense = 100; //true value:
+        productionSpeed = 100; //true value:
+        collectionSpeed = 100; //true value:
+        shipSpeed = 100; //true value:
+
+    }
+
+    public void spawnSkilltree(){
         
+
+    }
+    public void addObject(Actor object,int x, int y){
+        addObject(new Textbox(),x, y);
+    }
+    public void act(){
+        if (Greenfoot.mouseClicked(this)) {
+            Textbox textbox = new Textbox();
+            getWorld().addObject(new Textbox(), 100, 100);
+            getWorld().addObject(new Textbox(), 200, 100);
+            getWorld().addObject(new Textbox(), 300, 100);
+        }
     }    
 }
