@@ -10,20 +10,30 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class HomePlanet extends Planet
 {
-    int fleetSize;
-    int credits;
-    int steel;
-    int electricalParts;
+    //ressourcen:
+    public static int credits = 100000;
+    public static int fleetSize;
+    public static int steel;
+    public static int electricalParts;
+
+    //int`s zum upgraden:
+    public static double passiveIncome = 1000;//x amount of credit per round
+
+    //koordinaten:
     int xCoord;
     int yCoord;
-    
+
     // Konstruktor
     public HomePlanet(int x, int y){
         super(x, y);
         fleetSize = 0;
-        credits = 100000;
+        HomePlanet.credits = 100000;
         steel = 5;
         electricalParts = 5;
+    }
+
+    public int getCredits(){
+        return credits;
     }
 
     /**

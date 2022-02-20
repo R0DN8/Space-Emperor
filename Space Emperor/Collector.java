@@ -10,15 +10,13 @@ public class Collector extends Spaceship
 {
     private int mineSpeed;
     
-    
-    public Collector(Position position, int speed, int mineSpeed) {
-        super(position, speed);
-        getWorld().addObject(this, position.getX(), position.getY());
-    }
-    
-    
     public Collector(Planet planet, int speed, int mineSpeed) {
         super(planet, speed);
+        this.mineSpeed = mineSpeed;
+    }
+    
+    public Collector(int x, int y, int speed, int mineSpeed) {
+        super(x, y, speed);
         this.mineSpeed = mineSpeed;
     }
     

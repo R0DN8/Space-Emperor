@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class Fighter extends Spaceship
 {
-    public Fighter(Position position, int velocity) {
-        super(position, velocity);
+    public Fighter(int x, int y, int velocity) {
+        super(x, y, velocity);
     }
     
     public Fighter(Planet planet, int velocity) {

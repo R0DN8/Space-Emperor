@@ -36,18 +36,19 @@ public class Skilltree extends Actor
     }
 
     public void spawnSkilltree(){
-        
-
+        if (Greenfoot.mouseClicked(this)) {
+            Textbox textbox = new Textbox();
+            getWorld().addObject(new Textbox(), 200, 200);
+            getWorld().addObject(new Textbox(), 200, 300);
+            getWorld().addObject(new Textbox(), 200, 400);
+        }
     }
+    
     public void addObject(Actor object,int x, int y){
         addObject(new Textbox(),x, y);
     }
+    
     public void act(){
-        if (Greenfoot.mouseClicked(this)) {
-            Textbox textbox = new Textbox();
-            getWorld().addObject(new Textbox(), 100, 100);
-            getWorld().addObject(new Textbox(), 200, 100);
-            getWorld().addObject(new Textbox(), 300, 100);
-        }
+        
     }    
 }
