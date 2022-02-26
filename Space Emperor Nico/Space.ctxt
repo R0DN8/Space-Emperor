@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Space
+comment0.text=\r\n\ Hintergrund\ (Weltraum)\ \r\n\ \r\n\ IN\ ENGLISH\ PLEASE\!\!\r\n\ \r\n\ @author\ (Nico,Nils,Laurenz,\ Justin)\ Tin\r\n\ @version\ 03.02.2022\r\n
+comment1.params=
+comment1.target=Space()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Space\r\n\ \r\n
+comment2.params=
+comment2.target=void\ gifAnimation()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ addSpaceship()
+comment5.params=
+comment5.target=void\ showMessage()
+numComments=6
