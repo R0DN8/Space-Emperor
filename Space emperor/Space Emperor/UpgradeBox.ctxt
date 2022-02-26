@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=UpgradeBox
+comment0.text=\r\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ UpgradeBox.\r\n\ \r\n\ @author\ (Justin,\ Laurenz)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=void\ upgrade()
+comment2.params=
+comment2.target=boolean\ getUpgradingStatus()
+comment3.params=
+comment3.target=double\ getpassiveIncome()
+comment4.params=
+comment4.target=int\ getCredits()
+comment5.params=
+comment5.target=void\ act()
+numComments=6
