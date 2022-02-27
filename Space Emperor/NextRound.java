@@ -16,6 +16,12 @@ public class NextRound extends Actor
     
     public void act() 
     {
+        Space mySpace = (Space)getWorld();
+        mySpace.showMessage("Next Round", 50, 800, 500);
         
+        if(Greenfoot.mouseClicked(this)){
+            roundCounter++;
+            
+        }
     }    
 }
