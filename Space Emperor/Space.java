@@ -27,7 +27,8 @@ public class Space extends World
         Skilltree skilltree = new Skilltree();
         addObject(new Skilltree(), 1000, 600);
 
-        showMessage();
+        NextRound nextround = new NextRound();
+        addObject(new NextRound(), 926, 800);
     }
 
     public void gifAnimation()
@@ -44,8 +45,8 @@ public class Space extends World
         addObject(new Collector(30, 15, 60, 3), 30, 15);
         addObject(new Collector(490, 449, 60, 3), 490, 449);
     }
-    
-    public void showMessage()
+
+    public void showMessage(String text, int fontSize, int textXCoord, int textYCoord)
     {
         /*
          * GreenfootImage /NAME/ = new GreenfootImage(/TEXT OR VARIABLE/, /FONT-SIZE/, Color.WHITE, null);
@@ -53,7 +54,8 @@ public class Space extends World
          * 
          * !To insert new Text: Copy above two lines; change the parameters in //
          */
-
+        GreenfootImage test = new GreenfootImage(text, fontSize, Color.WHITE, null);
+        getBackground().drawImage(test, textXCoord, textYCoord);
     }
 
     /* Diese Methode verhindert, dass Objekte angezeigt werden.

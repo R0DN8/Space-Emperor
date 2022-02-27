@@ -36,12 +36,8 @@ public class Skilltree extends Actor
     }
 
     public void spawnSkilltree(){
-        if (Greenfoot.mouseClicked(this)) {
-            Textbox textbox = new Textbox();
-            getWorld().addObject(new Textbox(), 200, 200);
-            getWorld().addObject(new Textbox(), 200, 300);
-            getWorld().addObject(new Textbox(), 200, 400);
-        }
+        
+
     }
     
     public void addObject(Actor object,int x, int y){
@@ -49,6 +45,25 @@ public class Skilltree extends Actor
     }
     
     public void act(){
-        
-    }    
+        if (Greenfoot.mouseClicked(this)) {
+            UpgradeBox textbox = new UpgradeBox();
+            //first column
+            getWorld().addObject(new UpgradeBox(), 90, 250);
+            getWorld().addObject(new UpgradeBox(), 90, 490);
+            getWorld().addObject(new UpgradeBox(), 90, 730);
+            //second column
+            getWorld().addObject(new UpgradeBox(), 400, 180);
+            getWorld().addObject(new UpgradeBox(), 400, 320);
+            
+            getWorld().addObject(new UpgradeBox(), 400, 800);
+            getWorld().addObject(new UpgradeBox(), 400, 660);
+            
+            /*
+            GreenfootImage strich = new GreenfootImage (1090; 875);
+            strich.setColor(Color.YELLOW); //or: strich.setColor(new Color (200,200,255))
+            strich.drawLine(0,0,100,100);
+            setImage(strich); 
+            */
+        }
+    }   
 }

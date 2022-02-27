@@ -13,10 +13,10 @@ public class HomePlanet extends Planet
     //ressourcen:
     public static int credits = 100000;
     public static int fleetSize;
-    public static int steel;
+    public static int steel = 50000;
     public static int electricalParts;
 
-    //int`s zum upgraden:
+    //doubles zum upgraden:
     public static double passiveIncome = 1000;//x amount of credit per round
 
     //koordinaten:
@@ -28,7 +28,7 @@ public class HomePlanet extends Planet
         super(x, y);
         fleetSize = 0;
         HomePlanet.credits = 100000;
-        steel = 5;
+        HomePlanet.steel = 5000;
         electricalParts = 5;
     }
 
