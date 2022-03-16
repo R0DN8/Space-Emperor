@@ -13,6 +13,7 @@ public class Space extends World
 {
     GifImage gifImg = new GifImage("SB.gif");
     private static Space space;
+    private static int currentRound = 0;
     /**
      * Konstruktor für Objekte der Klasse Space
      * 
@@ -41,6 +42,7 @@ public class Space extends World
     public void act()
     {
         gifAnimation();
+        currentRound++;
     }
 
     public static void addSpaceship(Spaceship spaceship) {
@@ -65,4 +67,8 @@ public class Space extends World
     public void addObject(Actor object, int x, int y){
 
     }*/
+    
+    public static int getCurrentRound(){
+        return currentRound;
+    }
 }
