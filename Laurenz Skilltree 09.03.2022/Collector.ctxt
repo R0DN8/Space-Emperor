@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Collector
+comment0.text=\r\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Sammler.\r\n\ \r\n\ @author\ Luca,\ Jason\r\n\ @version\ 09.02.2022\r\n
+comment1.params=planet\ speed\ mineSpeed
+comment1.target=Collector(Planet,\ int,\ int)
+comment2.params=x\ y\ speed\ mineSpeed
+comment2.target=Collector(int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ onFinish()
+comment5.params=
+comment5.target=java.lang.String\ getName()
+numComments=6
