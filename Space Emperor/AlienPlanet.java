@@ -12,18 +12,22 @@ public class AlienPlanet extends Planet
     int xCoord;
     int yCoord;
     int credits;
+    public static int travelTime; //in Runden
     
     public AlienPlanet(int x, int y){
         super(x, y);
         fleetSize = 0;
         credits = 0;
     }
+    
     /**
      * Act - tut, was auch immer AlienPlanet tun will. Diese Methode wird aufgerufen, 
      * sobald der 'Act' oder 'Run' Button in der Umgebung angeklickt werden. 
      */
     public void act() 
     {
-        // Ergänzen Sie Ihren Quelltext hier...
+        if (Greenfoot.mouseClicked(this)){
+            CombatBox combatbox = new CombatBox();
+        }
     }    
 }
