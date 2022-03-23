@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
 
 /**
- * Ergänzen Sie hier eine Beschreibung für die Klasse Fighter.
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * 
+ * @author Jason, Luca
+ * @version 09.03.2022
  */
 public class Fighter extends Spaceship
 {

@@ -11,6 +11,8 @@ public abstract class Spaceship extends Actor
 
     
     private int velocity; //in x/y pro runde z.B. 10 pro runde
+    private int x;
+    private int y;
     
     private int moveDeltaX, moveDeltaY;
     private int roundForMoveNeeded;
@@ -24,6 +26,9 @@ public abstract class Spaceship extends Actor
     public Spaceship(int x, int y, int velocity){
         this.setLocation(x, y);
         this.velocity = velocity;
+        this.x = x;
+        this.y = y;
+        Space.addSpaceship(this);
     }
 
     /**
@@ -44,6 +49,8 @@ public abstract class Spaceship extends Actor
     if(currentMoveRound < roundForMoveNeeded) {
            this.setLocation(this.getX() + moveDeltaX, this.getY() + moveDeltaY);
            this.currentMoveRound++;
+           this.x = super.getX();
+           this.y = super.getY();
            
         }else {
             onFinish();
@@ -82,4 +89,11 @@ public abstract class Spaceship extends Actor
     }
     
     
+    public int getX(){
+        return x;
+    }
+    
+    public int getY(){
+        return y;
+    }
 }

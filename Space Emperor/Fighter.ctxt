@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Fighter
-comment0.text=\r\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Fighter.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ \r\n\ \r\n\ @author\ Jason,\ Luca\r\n\ @version\ 09.03.2022\r\n
 comment1.params=x\ y\ velocity
 comment1.target=Fighter(int,\ int,\ int)
 comment2.params=planet\ velocity

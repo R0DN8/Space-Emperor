@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=EventManager
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Event\ here.\r\n\ \r\n\ @author\ Luca,\ Jason\r\n\ @version\ 09.03.2022\r\n
+comment1.params=
+comment1.target=EventManager()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=boolean\ getProbatilityEvent()
+comment3.text=\r\n\ Returns\ true\ if\ randomevent\ should\ be\ added\r\n\ @return\r\n
+comment4.params=round
+comment4.target=boolean\ isEvent(int)
+comment4.text=\r\n\ Returns\ true\ if\ one\ Event\ is\ planned\r\n\ @param\ round\r\n\ @return\r\n
+comment5.params=
+comment5.target=EventManager\ getStaticEvent()
+numComments=6

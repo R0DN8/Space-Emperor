@@ -13,8 +13,13 @@ public class AlienPlanet extends Planet
     int yCoord;
     int credits;
     
+    
+    //Enemy
+    private Enemy enemy;
+    
     public AlienPlanet(int x, int y){
         super(x, y);
+        enemy = new Enemy(this);
         fleetSize = 0;
         credits = 0;
     }

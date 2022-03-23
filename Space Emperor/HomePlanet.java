@@ -22,6 +22,7 @@ public class HomePlanet extends Planet
     //koordinaten:
     int xCoord;
     int yCoord;
+    
 
     // Konstruktor
     public HomePlanet(int x, int y){

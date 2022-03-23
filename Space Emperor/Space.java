@@ -12,6 +12,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
 public class Space extends World
 {
     GifImage gifImg = new GifImage("SB.gif");
+    private static Space space;
+    private static int currentRound = 0;
     /**
      * Konstruktor für Objekte der Klasse Space
      * 
@@ -20,6 +22,7 @@ public class Space extends World
     {    
         // Erstellt eine neue Welt mit 1090x875 Zellen und einer Zell-Größe von 1x1 Pixeln.
         super(1090, 875, 1); //Auflösung und Pixelgröße
+        space = this;
 
         //folgende Objecte werden mit der Welt geladen:
         SideBarMenu sideBarMenu = new SideBarMenu();
@@ -39,11 +42,11 @@ public class Space extends World
     public void act()
     {
         gifAnimation();
+        currentRound++;
     }
 
-    public void addSpaceship() {
-        addObject(new Collector(30, 15, 60, 3), 30, 15);
-        addObject(new Collector(490, 449, 60, 3), 490, 449);
+    public static void addSpaceship(Spaceship spaceship) {
+        space.addObject(spaceship, spaceship.getX(), spaceship.getY());
     }
 
     public void showMessage(String text, int fontSize, int textXCoord, int textYCoord)
@@ -64,4 +67,9 @@ public class Space extends World
     public void addObject(Actor object, int x, int y){
 
     }*/
+    
+    public static int getCurrentRound(){
+        return currentRound;
+    }
+    
 }
