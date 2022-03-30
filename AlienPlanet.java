@@ -8,13 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class AlienPlanet extends Planet
 {
-    int fleetSize;
-    int xCoord;
-    int yCoord;
-    int credits;
+    public static int travelTime; //in Runden
     
+    //Enemy
+    private Enemy enemy;
     public AlienPlanet(int x, int y){
         super(x, y);
+        enemy = new Enemy(this);
         fleetSize = 0;
         credits = 0;
     }
@@ -24,6 +24,8 @@ public class AlienPlanet extends Planet
      */
     public void act() 
     {
-        // Ergänzen Sie Ihren Quelltext hier...
+        if (Greenfoot.mouseClicked(this)){
+            CombatBox combatbox = new CombatBox();
+        }
     }    
 }

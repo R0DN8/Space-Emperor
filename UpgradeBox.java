@@ -13,12 +13,12 @@ public class UpgradeBox extends Textbox
      * sobald der 'Act' oder 'Run' Button in der Umgebung angeklickt werden. 
      */
 
-    int creditCost = 1000;
-    int steelCost = 500;
-    double i = 1.1; //i für increase
-    int upgradeTime = 3;
-    int remainingTime;
-    boolean upgrading = false; //Indikator, der anzeigt, ob das Upgrade läuft oder nicht
+    private int creditCost = 1000;
+    private int steelCost = 500;
+    private double i = 1.1; //i für increase
+    private int upgradeTime = 3;
+    private int remainingTime;
+    private boolean upgrading = false; //Indikator, der anzeigt, ob das Upgrade läuft oder nicht
     public void upgrade(){
         /*if(Greenfoot.mouseClicked(this) && HomePlanet.credits>=creditCost && HomePlanet.steel>= steelCost){
         remainingTime = upgradeTime;

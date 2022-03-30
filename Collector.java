@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
 
 /**
- * 
+ * Ergänzen Sie hier eine Beschreibung für die Klasse Sammler.
  * 
  * @author Luca, Jason
  * @version 09.02.2022

@@ -23,7 +23,7 @@ public class Space extends World
         // Erstellt eine neue Welt mit 1090x875 Zellen und einer Zell-Größe von 1x1 Pixeln.
         super(1090, 875, 1); //Auflösung und Pixelgröße
         space = this;
-
+        
         //folgende Objecte werden mit der Welt geladen:
         SideBarMenu sideBarMenu = new SideBarMenu();
         addObject(new SideBarMenu(), 983, 440);
@@ -60,6 +60,10 @@ public class Space extends World
         GreenfootImage test = new GreenfootImage(text, fontSize, Color.WHITE, null);
         getBackground().drawImage(test, textXCoord, textYCoord);
     }
+    
+    public static int getCurrentRound(){
+        return currentRound;
+    }
 
     /* Diese Methode verhindert, dass Objekte angezeigt werden.
      * Was genau sie anstellt, keine Ahnung. Vielleicht zeigt sie die Objekte hinter dem 
@@ -67,8 +71,4 @@ public class Space extends World
     public void addObject(Actor object, int x, int y){
 
     }*/
-    
-    public static int getCurrentRound(){
-        return currentRound;
-    }
 }

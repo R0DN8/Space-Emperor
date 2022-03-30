@@ -14,7 +14,6 @@ public class Textbox extends Actor
      */
     public void act()
     {
-    
+        // ...
     }
-    
 }

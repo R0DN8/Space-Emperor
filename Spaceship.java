@@ -21,7 +21,7 @@ public abstract class Spaceship extends Actor
     
 
     /**
-     * Spaceship appears on positio
+     * Spaceship appears on position
      */
     public Spaceship(int x, int y, int velocity){
         this.setLocation(x, y);
@@ -87,7 +87,6 @@ public abstract class Spaceship extends Actor
         double length = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
         return (int) Math.round(length / velocity);
     }
-    
     
     public int getX(){
         return x;
