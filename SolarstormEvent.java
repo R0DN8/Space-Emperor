@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SolarstormEvent extends Event
 {
     
-    public void startEvent(){
+    public void startEvent(Planet target){
         
     }
 }

@@ -20,8 +20,6 @@ public class NextRound extends Actor
         Space mySpace = (Space)getWorld();
         mySpace.showMessage("Next Round", 50, 800, 500); 
         
-          
-
         if(Greenfoot.mouseClicked(this)){
             if(roundCounter == 0){
                 //Text t = new Text();
@@ -31,7 +29,10 @@ public class NextRound extends Actor
             else {
                 //Text t = (Text)getOneObjectAtOffset(-826, -600, Text.class);
                 t.setText("funktionierender Text yay", 800, 500, 20);
-                
+                for(Spaceship ship : getWorld().getObjects(Spaceship.class)){
+                    ship.move();
+                }
+                EventManager.getStaticEvent().nextRound();
                 roundCounter++;
                 
                 

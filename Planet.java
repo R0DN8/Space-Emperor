@@ -8,11 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public abstract class Planet extends Actor
 {
-    protected int fleetSize;
-    protected int xCoord;
-    protected int yCoord;
-    protected int credits;
-    protected Position position;
+    int fleetSize;
+    int xCoord;
+    int yCoord;
+    int credits;
+    Position position;
     public Planet(int x, int y){
         position = new Position(x, y);
     }

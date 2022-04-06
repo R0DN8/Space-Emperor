@@ -12,13 +12,19 @@ public class UpgradeBox extends Textbox
      * Act - tut, was auch immer UpgradeBox tun will. Diese Methode wird aufgerufen, 
      * sobald der 'Act' oder 'Run' Button in der Umgebung angeklickt werden. 
      */
+    int x, y;
+    int creditCost = 1000;
+    int steelCost = 500;
+    double i = 1.1; //i für increase
+    int upgradeTime = 3;
+    int remainingTime;
+    boolean upgrading = false; //Indikator, der anzeigt, ob das Upgrade läuft oder nicht
 
-    private int creditCost = 1000;
-    private int steelCost = 500;
-    private double i = 1.1; //i für increase
-    private int upgradeTime = 3;
-    private int remainingTime;
-    private boolean upgrading = false; //Indikator, der anzeigt, ob das Upgrade läuft oder nicht
+    public UpgradeBox(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public void upgrade(){
         /*if(Greenfoot.mouseClicked(this) && HomePlanet.credits>=creditCost && HomePlanet.steel>= steelCost){
         remainingTime = upgradeTime;
@@ -72,5 +78,14 @@ public class UpgradeBox extends Textbox
                 HomePlanet.passiveIncome = HomePlanet.passiveIncome * i;
             }
         }
+    }
+    
+    
+    public int getX() {
+        return this.x;
+    }
+    
+    public int getY() { 
+        return this.y;
     }
 }

@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
-
+import java.util.*;
 /**
  * Ergänzen Sie hier eine Beschreibung für die Klasse Skilltree.
  * 
@@ -14,16 +14,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class Skilltree extends Actor
 {
-    private int strength;//Raumschiffstärke -> mehr Schaden
-    private int defense;//Verteidigung des eigenen Planeten (evtl. Haltbarkeit der Schiffe/später Schild)
-    private int productionSpeed;//erhöht Produktion auf eigenem Planeten pro Runde
-    private int collectionSpeed;//erhöht Materialaufnahme der Schiffe pro "fahrt"
-    private int shipSpeed;//Geschwindigkeit der Schiffe
-
-    /**
-     * Act - tut, was auch immer Skilltree tun will. Diese Methode wird aufgerufen, 
-     * sobald der 'Act' oder 'Run' Button in der Umgebung angeklickt werden. 
-     */
+    int strength;//Raumschiffstärke -> mehr Schaden
+    int defense;//Verteidigung des eigenen Planeten (evtl. Haltbarkeit der Schiffe/später Schild)
+    int productionSpeed;//erhöht Produktion auf eigenem Planeten pro Runde
+    int collectionSpeed;//erhöht Materialaufnahme der Schiffe pro "fahrt"
+    int shipSpeed;//Geschwindigkeit der Schiffe
+    private List<UpgradeBox> upgradeBoxes = new ArrayList<>();
+    private boolean isOpen = false;
 
     public Skilltree(){
         //Stats in "%" wird später in ihre true value geändert
@@ -32,12 +29,24 @@ public class Skilltree extends Actor
         productionSpeed = 100; //true value:
         collectionSpeed = 100; //true value:
         shipSpeed = 100; //true value:
+        createUpgradeBoxes();
+    }
+
+    private void createUpgradeBoxes()
+    {
+        upgradeBoxes.add(new UpgradeBox(90, 250));
+        upgradeBoxes.add(new UpgradeBox(90, 490));
+        upgradeBoxes.add(new UpgradeBox(90, 730));
+        upgradeBoxes.add(new UpgradeBox(400, 180));
+        upgradeBoxes.add(new UpgradeBox(400, 320));
+        upgradeBoxes.add(new UpgradeBox(400, 800));
+        upgradeBoxes.add(new UpgradeBox(400, 660));
 
     }
 
     public void spawnSkilltree(){
         /*not sure if this is outdated :/
-         
+
         if (Greenfoot.mouseClicked(this)) {
         Textbox textbox = new Textbox();
         getWorld().addObject(new Textbox(), 200, 200);
@@ -50,9 +59,25 @@ public class Skilltree extends Actor
         addObject(new Textbox(),x, y);
     }
 
+    
     public void act(){
         if (Greenfoot.mouseClicked(this)) {
-            UpgradeBox textbox = new UpgradeBox();
+
+            if(isOpen) {
+                for(int i = 0; i < upgradeBoxes.size(); i++) {
+                    getWorld().removeObject(upgradeBoxes.get(i));
+                }
+            }else {
+                for(int i = 0; i < upgradeBoxes.size(); i++) {
+                    UpgradeBox box = upgradeBoxes.get(i);
+                    getWorld().addObject(box, box.getX(), box.getY());
+                    
+                    
+                }
+            }
+            
+            isOpen = !isOpen;
+            /*UpgradeBox textbox = new UpgradeBox();
             //first column
             getWorld().addObject(new UpgradeBox(), 90, 250);
             getWorld().addObject(new UpgradeBox(), 90, 490);
@@ -70,8 +95,7 @@ public class Skilltree extends Actor
             strich.drawLine(0,0,100,100);
             setImage(strich); 
              */
-            
-            
+
             
             /* von Laurenz 9.03:
              * //second column
@@ -81,7 +105,6 @@ public class Skilltree extends Actor
             getWorld().addObject(new UpgradeBox(), 400, 660);
             getWorld().addObject(new UpgradeBox(), 400, 490);
             //third collumn
-            
 
             GreenfootImage strich = new GreenfootImage (2000, 1200);
             strich.setColor(new Color (255,255,255));
@@ -93,7 +116,7 @@ public class Skilltree extends Actor
             //third row
             strich.drawLine(165,730,325,660);
             strich.drawLine(165,730,325,800);
-            
+
             setImage(strich);
              */
 

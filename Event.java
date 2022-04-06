@@ -17,5 +17,5 @@ public abstract class Event extends Actor
         // Add your action code here.
     }
     
-    public abstract void startEvent();
+    public abstract void startEvent(Planet target);
 }

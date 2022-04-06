@@ -19,6 +19,10 @@ public class HomePlanet extends Planet
     //doubles zum upgraden:
     public static double passiveIncome = 1000;//x amount of credit per round
 
+    //koordinaten:
+    int xCoord;
+    int yCoord;
+
     // Konstruktor
     public HomePlanet(int x, int y){
         super(x, y);

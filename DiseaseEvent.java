@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class DiseaseEvent extends Event
 {
     
-    public void startEvent(){
+    public void startEvent(Planet target){
         
     }
 }

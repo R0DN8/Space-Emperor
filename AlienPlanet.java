@@ -8,6 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class AlienPlanet extends Planet
 {
+    int fleetSize;
+    int xCoord;
+    int yCoord;
+    int credits;
     public static int travelTime; //in Runden
     
     //Enemy
