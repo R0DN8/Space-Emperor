@@ -48,15 +48,15 @@ public class EventManager extends Actor
         }
     }
     
-    public void act(){
+    public void nextRound(){
         final EventType event = eventrounds.get(Space.getCurrentRound());
         if(event != null){
             if(event == EventType.asteroid){
-                new AsteroidEvent().startEvent();
+                new AsteroidEvent().startEvent(null);
             } else if (event == EventType.disease){
-                new DiseaseEvent().startEvent();
+                new DiseaseEvent().startEvent(null);
             } else if (event == EventType.solarstorm){
-                new SolarstormEvent().startEvent();
+                new SolarstormEvent().startEvent(null);
             }
         }
     }

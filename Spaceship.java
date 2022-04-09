@@ -44,9 +44,8 @@ public abstract class Spaceship extends Actor
     /**
      * Moves Ship after every round
      */
-    public void act() 
-    {
-    if(currentMoveRound < roundForMoveNeeded) {
+    public void move(){
+        if(currentMoveRound < roundForMoveNeeded) {
            this.setLocation(this.getX() + moveDeltaX, this.getY() + moveDeltaY);
            this.currentMoveRound++;
            this.x = super.getX();
@@ -55,8 +54,7 @@ public abstract class Spaceship extends Actor
         }else {
             onFinish();
         }
-        
-    } 
+    }
     
     /**
      * Spaceship moves in some rounds (based on velocity) to the given endposition
@@ -69,6 +67,7 @@ public abstract class Spaceship extends Actor
         currentMoveRound = 0;
         moveDeltaX = (x - this.getX()) / roundForMoveNeeded;
         moveDeltaY = (y - this.getY()) / roundForMoveNeeded;
+        
     }
     
     /**

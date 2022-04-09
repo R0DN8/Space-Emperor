@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DiseaseEvent
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Disease\ here.\r\n\ \r\n\ @author\ Jason\r\n\ @version\ 16.03.2022\r\n
-comment1.params=
-comment1.target=void\ startEvent()
+comment1.params=target
+comment1.target=void\ startEvent(Planet)
 numComments=2

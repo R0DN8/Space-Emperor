@@ -9,13 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
 public class Fighter extends Spaceship
 {
     public static int speed;
-    
+    public static double damage = 100;
+    /*
     //stlots der Truppen/Figghter im mothership
     public static boolean[] mothershipSlots = {true, true, false, false, false, false};
     
     //werte der einzelnen Truppen im mothership
     public static int[] mothershipValues = new int[6];
-    
+    */
     public Fighter(int x, int y, int velocity) {
         super(x, y, velocity);
     }
@@ -36,12 +37,5 @@ public class Fighter extends Spaceship
     
     public String getName(){
         return "Fighter";
-    }
-    
-    public void startCombat(){
-        //int random = (int )(Math.random() * 6 + 1);
-        if(mothershipSlots[0] == true){
-            mothershipValues[0] = (int )(Math.random() * 6 + 1);
-        }
     }
 }

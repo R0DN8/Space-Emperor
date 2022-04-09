@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DiseaseEvent extends Event
 {
-    
-    public void startEvent(){
-        
+    GifImage gifImage = new GifImage("illness.gif");
+    public void startEvent(Planet target){
+        setImage(gifImage.getCurrentImage());
     }
 }

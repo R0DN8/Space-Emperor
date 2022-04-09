@@ -3,6 +3,7 @@ comment0.target=Fighter
 comment0.text=\r\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Fighter.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
 comment1.params=x\ y\ velocity
 comment1.target=Fighter(int,\ int,\ int)
+comment1.text=\r\n\ \ \ \ //stlots\ der\ Truppen/Figghter\ im\ mothership\r\n\ \ \ \ public\ static\ boolean[]\ mothershipSlots\ \=\ {true,\ true,\ false,\ false,\ false,\ false};\r\n\ \ \ \ \r\n\ \ \ \ //werte\ der\ einzelnen\ Truppen\ im\ mothership\r\n\ \ \ \ public\ static\ int[]\ mothershipValues\ \=\ new\ int[6];\r\n
 comment2.params=planet\ velocity
 comment2.target=Fighter(Planet,\ int)
 comment3.params=
@@ -11,6 +12,4 @@ comment4.params=
 comment4.target=void\ onFinish()
 comment5.params=
 comment5.target=java.lang.String\ getName()
-comment6.params=
-comment6.target=void\ startCombat()
-numComments=7
+numComments=6

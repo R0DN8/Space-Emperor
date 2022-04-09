@@ -18,10 +18,24 @@ public class HomePlanet extends Planet
 
     //doubles zum upgraden:
     public static double passiveIncome = 1000;//x amount of credit per round
-
+    public static double offensivePower = 1000;
+    
+    //Combat system 
+    //abweichung (wie das Sigma bei Normalverteilung):
+    public static double offensiveSigma = offensivePower*0.2;
+    
+    //obere/untere grenze des intervalls
+    static double lowerBoundAtk = offensivePower-offensiveSigma;
+    static double upperBoundAtk = offensivePower+offensiveSigma;
+    
+    public static double trueOffensivePower;
+    public static double trueDefensivePower;
+    
     //koordinaten:
     int xCoord;
     int yCoord;
+    
+    GifImage gifHomePlanet = new GifImage("homeplanet.gif");
 
     // Konstruktor
     public HomePlanet(int x, int y){
@@ -35,6 +49,11 @@ public class HomePlanet extends Planet
     public int getCredits(){
         return credits;
     }
+    
+    public double roundIncome(){
+        //credits += passiveIncome;
+        return credits+=passiveIncome;
+    }
 
     /**
      * Act - tut, was auch immer Planet tun will. Diese Methode wird aufgerufen, 
@@ -43,5 +62,6 @@ public class HomePlanet extends Planet
     public void act() 
     {
         // Ergänzen Sie Ihren Quelltext hier...
+        setImage(gifHomePlanet.getCurrentImage());
     }    
 }
