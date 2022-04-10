@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  */
 public class NextRound extends Actor
 {
-    int roundCounter = 0;
+    public static int roundCounter = 0;
     Text t = new Text();
     Text uiText = new Text();
     Text testRoundCounter = new Text();

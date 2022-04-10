@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Skilltree
-comment0.text=\r\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Skilltree.\r\n\ \r\n\ @author\ (Laurenz,\ Justin)\ Tin\r\n\ @version\ 03.02.2022\r\n\ \r\n\ IN\ ENGLISH\ PLEASE\!\!\r\n\ \r\n\ Attribute,\ welche\ im\ Skilltree\ verbessert\ werden\ k\u00F6nnen\r\n\ \r\n\ Sp\u00E4ter\:\ Visualisierung\ des\ Skilltrees\r\n
+comment0.text=\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Skilltree.\n\ \n\ @author\ (Laurenz,\ Justin)\ Tin\n\ @version\ 03.02.2022\n\ \n\ IN\ ENGLISH\ PLEASE\!\!\n\ \n\ Attribute,\ welche\ im\ Skilltree\ verbessert\ werden\ k\u00F6nnen\n\ \n\ Sp\u00E4ter\:\ Visualisierung\ des\ Skilltrees\n
 comment1.params=
 comment1.target=Skilltree()
 comment2.params=

@@ -9,12 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot und MouseInfo)
  * @version 03.02.2022
  */
 
-public class Space extends World
-{
+public class Space extends World{
     GifImage gifImg = new GifImage("SB.gif");
     private static Space space;
     private static int currentRound = 0;
-    HomePlanet homeBoy = new HomePlanet(20, 20);
+    HomePlanet homeBoy = new HomePlanet(450, 700);
     Alien1 alien1 = new Alien1(10, 10);
     Alien2 alien2 = new Alien2(10, 10);
     Alien3 alien3 = new Alien3(10, 10);
@@ -38,11 +37,13 @@ public class Space extends World
         NextRound nextround = new NextRound();
         addObject(new NextRound(), 926, 800);
 
-        addObject(alien1, 600, 600);
-        addObject(alien2, 500, 600);
-        addObject(alien3, 400, 600);
+        addObject(alien1, 150, 650);
+        addObject(alien2, 500, 400);
+        addObject(alien3, 750, 100);
 
-        addObject(homeBoy, 100, 800);
+        addObject(homeBoy, 450, 700);
+
+        //setPaintOrder(DieKlasseImVordergrund.class,DieKlasseImHintergrund.class);
     }
 
     public void gifAnimation()
@@ -88,7 +89,7 @@ public class Space extends World
          * 
          * !To insert new Text: Copy above two lines; change the parameters in //
          */
-        GreenfootImage test = new GreenfootImage(text, fontSize, Color.WHITE, null);
-        getBackground().drawImage(test, textXCoord, textYCoord);
+        /*GreenfootImage test = new GreenfootImage(text, fontSize, Color.WHITE, null);
+        getBackground().drawImage(test, textXCoord, textYCoord);*/
     }
 }

@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Position
-comment0.text=\r\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Position.\r\n\ \r\n\ @author\ (Luca,\ Jason)\ Tin\ \r\n\ @version\ 03.02.2022\r\n
+comment0.text=\n\ Erg\u00E4nzen\ Sie\ hier\ eine\ Beschreibung\ f\u00FCr\ die\ Klasse\ Position.\n\ \n\ @author\ (Luca,\ Jason)\ Tin\ \n\ @version\ 03.02.2022\n
 comment1.params=x\ y
 comment1.target=Position(int,\ int)
-comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Position\r\n
+comment1.text=\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Position\n
 comment2.params=
 comment2.target=int\ getX()
 comment3.params=x
